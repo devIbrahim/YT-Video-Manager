@@ -103,4 +103,8 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.hide {
+  display: none !important;
+}
 /*# sourceMappingURL=styles.css.map */
