@@ -1,9 +1,21 @@
-  {
-    "name": "YT Video Manager",
-    "version": "1.0",
-    "description": "A Chrome extension that allows you to continue YouTube videos from where you left off.",
-    "manifest_version": 2,
-    "page_action": {
-      "default_popup": "popup.html"
+{
+  "name": "YT Video Manager",
+  "version": "1.0",
+  "description": "Some description...",
+  "manifest_version": 2,
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "./icon.png",
+    "32": "./icon.png",
+    "48": "./icon.png",
+    "128": "./icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://youtube.com/watch*"],
+      "js": ["content.js"]
     }
-  }
+  ]
+}
